@@ -8,12 +8,12 @@ module.exports = function( logs ) {
 	console.log( 'realname: ' + env.IRC_BOT_REALNAME );
 	console.log( 'password: ' + env.IRC_BOT_PASSWORD );
 
-	// start the irc bot, and for each message on each channel, append to the logs
+	// porniți robotul IRC și, pentru fiecare mesaj de pe fiecare canal, atașați-l la jurnale
 	if( env.IRC_SERVER && env.IRC_BOT_NICK && env.IRC_CHANNELS ) {
 		var irc = require('irc'),
 			channels = env.IRC_CHANNELS.toLowerCase().split(',');
 
-		console.log( 'connecting to IRC!' );
+		console.log( 'Conectarea la IRC!' );
 
 		var client = new irc.Client(
 			env.IRC_SERVER,
