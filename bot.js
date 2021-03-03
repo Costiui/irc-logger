@@ -19,8 +19,8 @@ module.exports = function( logs ) {
 			env.IRC_SERVER,
 			env.IRC_BOT_NICK,
 			{
-				userName: env.IRC_BOT_USERNAME || 'nodelogger',
-				userName: env.IRC_BOT_REALNAME || 'nodeJS IRC logger',
+				userName: env.IRC_BOT_USERNAME || 'Oscar',
+				userName: env.IRC_BOT_REALNAME || 'IRC Log',
 				password: env.IRC_BOT_PASSWORD || null,
 				channels: channels,
 				stripColors: true
@@ -42,8 +42,8 @@ module.exports = function( logs ) {
 
 
 	} else {
-		console.log( 'NOT STARTING IRC BOT!!!!' );
-		console.log( 'You are missing some environment vars dummy.' );
+		console.log( 'NU Porniți IRC BOT !!!! ' );
+		console.log( 'Îți lipsesc niște manechine de mediu .' );
 	}
 
 }
