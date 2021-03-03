@@ -1,7 +1,7 @@
 {
 	"name": "hawkthorne-irc",
 	"version": "0.0.1",
-	"private": false,
+	"private": true,
 	"scripts": {
 		"start": "node app"
 	},
