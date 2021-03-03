@@ -7,9 +7,7 @@ var express = require('express')
   , cons = require('consolidate')
   , routes = require('./routes')
   , http = require('http');
-    setInterval(function() {
-    http.get("https://log-oscar.herokuapp.com");
-}, 300000); // la fiecare 5 minute  (300000)
+
 var app = express();
 
 var irc_logs = {};
@@ -40,6 +38,6 @@ app.get( '/:channel', routes.channel( irc_logs ) );
 app.get( '/', routes.index( irc_logs ) );
 
 http.createServer(app).listen(app.get('port'), function(){
-	console.log("Express server listening on port " + app.get('port'));
+	console.log("Ascultarea serverului Express pe port  " + app.get('port'));
 });
 
