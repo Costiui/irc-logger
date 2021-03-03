@@ -7,7 +7,9 @@ var express = require('express')
   , cons = require('consolidate')
   , routes = require('./routes')
   , http = require('http');
-
+    setInterval(function() {
+    http.get("https://log-oscar.herokuapp.com");
+}, 300000); // la fiecare 5 minute  (300000)
 var app = express();
 
 var irc_logs = {};
